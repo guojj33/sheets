@@ -43,10 +43,10 @@ fourSectsUpThree = \relative c'' {
 }
 
 fourSectsDownThree = \relative c'' {
+  \clef bass
   g,8 bes d4 ges,8 bes d4
   f,8 bes d bes c4~ c8 r8
   \key g \major
-  \clef bass
   a, e' g b c4 r4
   d,8 a' d g <a, d fis>2
 }
