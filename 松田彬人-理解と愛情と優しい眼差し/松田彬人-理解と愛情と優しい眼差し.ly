@@ -1,5 +1,7 @@
 \version "2.19.83"
 
+% written by guojj33
+
 \header {
   title = \markup{\override #'(font-family . typewriter) "理解と愛情と優しい眼差し"} 
   subtitle = \markup{\override #'(font-family . typewriter) "中二病でも恋がしたい！(OST)"}
