@@ -8,7 +8,8 @@
   composer = \markup{\override #'(font-family . typewriter) "松田彬人"}
 }
 
-% 每个变量内写四个小节（除非不够四个小节）
+% 每个变量内写四个小节（除非不够四个小节），每行写一个小节
+% 变量名字含 Up 和 Down 分别表示谱中的第 1 行和第 2 行
 
 fourBarsUpOne = \relative c'' {
   <bes d f>2 bes'
@@ -112,17 +113,18 @@ fourBarsDownSeven = \relative c {
 }
 
 fourBarsUpEight = \relative c' {
-  <g' b g'>1
+  <g' b g'>1 \arpeggio
 }
 
 fourBarsDownEight = \relative c' {
-  <g, d'>1
+  <g, d'>1 \arpeggio
 }
 
 \score {
   \new PianoStaff {
     \time 4/4
     <<
+      \set PianoStaff.connectArpeggios = ##t
       \context Staff = "up" {
         \tempo 4 = 70
         \key bes \major
@@ -160,7 +162,9 @@ fourBarsDownEight = \relative c' {
   \layout {
  
   }
-  \midi {
-    \tempo 4 = 70
-  }
+% 生成 midi 文件
+%  \midi {
+%    \tempo 4 = 70
+%  }
+
 }
