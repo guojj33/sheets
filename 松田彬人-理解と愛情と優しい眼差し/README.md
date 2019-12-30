@@ -1,1 +1,1 @@
-![rikka](https://raw.githubusercontent.com/guojj33/blogs/gh-pages/images/rikka.JPG)
+![rikka](https://raw.githubusercontent.com/guojj33/blogs/gh-pages/images/rikka.png)
